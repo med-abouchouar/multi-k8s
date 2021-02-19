@@ -1,6 +1,10 @@
-docker build -t abouchouar/multi-client:latest -t abouchouar/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t abouchouar/multi-server:latest -t abouchouar/multi-server:$SHA -f ./server/Dockerfile ./server
-docker built -t abouchouar/multi-worker:latest -t abouchouar/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t abouchouar/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t abouchouar/multi-server:$SHA -f ./server/Dockerfile ./server
+docker built -t abouchouar/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+
+#-t abouchouar/multi-client:latest 
+#-t abouchouar/multi-server:latest 
+#-t abouchouar/multi-worker:latest 
 
 #docker push abouchouar/multi-client:latest 
 #docker push abouchouar/multi-server:latest

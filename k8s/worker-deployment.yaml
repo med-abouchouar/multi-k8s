@@ -8,14 +8,14 @@ spec:
     matchLabels:
       component: worker
   template:
-    metadata: 
+    metadata:
       labels:
         component: worker
     spec:
       containers:
         - name: worker
           image: abouchouar/multi-worker
-          env: 
+          env:
             - name: REDIS_HOST
               value: redis-cluster-ip-service
             - name: REDIS_PORT
